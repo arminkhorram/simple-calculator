@@ -26,8 +26,8 @@ Then copy and paste the following code:
         self.add_widget(button)
 
 # Populating the Grid with Buttons
-        for i in range(1, 10):
-            self.add_button(str(i), self.on_button_press)
+    for i in range(1, 10):
+        self.add_button(str(i), self.on_button_press)
         self.add_button('C', self.clear_input)
         self.add_button('0', self.on_button_press)
         self.add_button('=', self.calculate_result)
