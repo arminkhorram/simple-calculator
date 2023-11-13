@@ -8,16 +8,16 @@ Copy and paste this command in your code editor's terminal
 Then copy and paste the following code:
 
 # Importing Kivy modules
-from kivy.app import App
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.button import Button
-from kivy.uix.textinput import TextInput
+    from kivy.app import App
+    from kivy.uix.gridlayout import GridLayout
+    from kivy.uix.button import Button
+    from kivy.uix.textinput import TextInput
 
 # Creating the Calculator Layout
-class CalculatorLayout(GridLayout):
-    def __init__(self, **kwargs):
-        super(CalculatorLayout, self).__init__(**kwargs)
-        self.cols = 4  # We'll have 4 columns for our calculator buttons
+    class CalculatorLayout(GridLayout):
+        def __init__(self, **kwargs):
+            super(CalculatorLayout, self).__init__(**kwargs)
+            self.cols = 4  # We'll have 4 columns for our calculator buttons
 
 
 # Adding Buttons to the Layout
@@ -54,9 +54,9 @@ class CalculatorLayout(GridLayout):
 
 
 # Main App Class
-class CalculatorApp(App):
-    def build(self):
-        return CalculatorLayout()
+    class CalculatorApp(App):
+        def build(self):
+            return CalculatorLayout()
 
 # Running the App
 if __name__ == '__main__':
